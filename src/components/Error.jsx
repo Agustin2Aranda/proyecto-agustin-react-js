@@ -1,7 +1,10 @@
 
 function Error() {
   return (
-    <div>Error</div>
+    <div>
+      <h2>Error 404 - Pagina no encontrada</h2>
+      <p>La pagina que buscas no existe</p>
+    </div>
   )
 }
 

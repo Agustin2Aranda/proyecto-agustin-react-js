@@ -3,8 +3,8 @@ import Logo from './Logo';
 function Header() {
   return (
     <div>
-      <Navbar />
-      <Logo />
+      {/* <Navbar />
+      <Logo /> */}
     </div>
   )
 }
