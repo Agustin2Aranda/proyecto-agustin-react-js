@@ -5,6 +5,12 @@ import './App.css'
 import Body from './components/Body.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Layout from './components/Layout.jsx';
+import Nosotros from './components/Nosotros.jsx';
+import Productos from './components/Productos.jsx';
+import Producto from './components/Producto.jsx';
+import Error from './components/Error.jsx';
 
 function App() {
   // const [count, setCount] = useState(0)
