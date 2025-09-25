@@ -1,6 +1,15 @@
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <div>
+      <nav>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </div>
   )
 }
 
