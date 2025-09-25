@@ -1,7 +1,22 @@
+import { Link } from "react-router-dom";
 
 function Layout() {
   return (
-    <div>Layout</div>
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/productos"}>Productos</Link>
+          </li>
+          <li>
+            <Link to={"/nosotros"}>Nosotros</Link>
+          </li>
+        </ul>
+      </nav>
+    </>
   )
 }
 
