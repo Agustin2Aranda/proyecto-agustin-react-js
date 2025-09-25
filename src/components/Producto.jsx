@@ -1,7 +1,11 @@
 
-function Producto() {
+function Producto({nombre, description, precio}) {
   return (
-    <div>Producto</div>
+    <div className="card">
+        <h2>{nombre}</h2>
+        <h4>{description}</h4>
+        <h3>${precio}</h3>
+    </div>
   )
 }
 

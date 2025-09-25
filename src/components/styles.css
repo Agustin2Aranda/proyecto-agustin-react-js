@@ -1,0 +1,13 @@
+#container {
+  display: flex;
+  gap: .9375rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 18.75rem;
+  width: 18.75rem;
+  background-color: blue;
+  border-radius: .9375rem;
+  text-align: center;
+}

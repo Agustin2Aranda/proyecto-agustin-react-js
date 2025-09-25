@@ -5,7 +5,7 @@ import "./styles.css"
 function Productos() {
   return (
     <div id="container">
-      {relojes.map(prod=>(
+        {relojes.map(prod=>(
           <Producto key={prod.id} {...prod}/>
         ))}
     </div>
