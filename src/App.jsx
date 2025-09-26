@@ -10,17 +10,17 @@ import Home from './components/Home.jsx';
 import Layout from './components/Layout.jsx';
 import Nosotros from './components/Nosotros.jsx';
 import Productos from './components/Productos.jsx';
-import Producto from './components/Producto.jsx';
 import Error from './components/Error.jsx';
+import Detalle from './components/Detalle.jsx';
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header />
+      {/* <Header />
       <Body />
-      <Footer />
+      <Footer /> */}
 
       <BrowserRouter>
         <Routes>
@@ -28,6 +28,7 @@ function App() {
             <Route index element={<Home/>}/>
             <Route path="/nosotros" element={<Nosotros/>}/>
             <Route path="/productos" element={<Productos/>}/>
+            <Route path="/productos/:id" element={<Detalle/>}/>
             <Route path="/*" element={<Error/>}/>
           </Route>
         </Routes>
