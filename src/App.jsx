@@ -1,9 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
 import './App.css'
-import Body from './components/Body.jsx';
-import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './components/Home.jsx';
@@ -12,16 +8,22 @@ import Nosotros from './components/Nosotros.jsx';
 import Productos from './components/Productos.jsx';
 import Error from './components/Error.jsx';
 import Detalle from './components/Detalle.jsx';
+import {getFirestore, doc, getDoc} from 'firebase/firestore';
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [data, setData] = useState({});
+  const db = getFirestore();
+
+  useEffect(() => {
+    //Crea la referencia al elemento que queremos traer
+    const itemRef = doc(db, "items", "XJLpVI26b3Q0lTiwMAlU");
+
+    //Traigo el documento
+    getDoc(itemRef).then(snapshot => {setData(snapshot.data());})
+  }, []);
 
   return (
     <>
-      {/* <Header />
-      <Body />
-      <Footer /> */}
-
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout/>}>
