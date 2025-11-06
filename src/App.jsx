@@ -9,6 +9,7 @@ import Productos from './components/Productos.jsx';
 import Error from './components/Error.jsx';
 import Detalle from './components/Detalle.jsx';
 import {getFirestore, doc, getDoc} from 'firebase/firestore';
+import CartContext from './components/CartContext.jsx';
 
 function App() {
   const [data, setData] = useState({});

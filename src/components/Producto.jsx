@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { CartContext } from "./CartContext.jsx"
 
 function Producto({nombre, description, precio, id}) {
   return (

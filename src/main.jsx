@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import CreateItem from './components/createItem.jsx'
 import TraerCollection from './components/TraerCollection.jsx'
 import './index.css'
 import App from './App.jsx'
@@ -21,7 +20,6 @@ initializeApp(firebaseConfig);
 createRoot(document.getElementById('root')).render(
   <>
     <App />
-    {/* <CreateItem/> */}
-    <TraerCollection/>
-  </>,
+    <TraerCollection />
+  </>
 )
